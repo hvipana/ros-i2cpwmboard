@@ -165,7 +165,6 @@
 
  */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -179,6 +178,10 @@
 extern "C" {
   #include <linux/i2c-dev.h>
   #include <i2c/smbus.h>
+}
+
+extern "C" {
+#include <i2c/smbus.h>
 }
 
 #include <ros/ros.h>
