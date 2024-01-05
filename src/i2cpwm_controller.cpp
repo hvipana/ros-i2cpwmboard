@@ -179,11 +179,6 @@ extern "C" {
   #include <linux/i2c-dev.h>
   #include <i2c/smbus.h>
 }
-
-extern "C" {
-#include <i2c/smbus.h>
-}
-
 #include <ros/ros.h>
 #include <ros/console.h>
 
@@ -1503,6 +1498,8 @@ static int _load_params (void)
 	}
 	else
 		ROS_DEBUG("Parameter Server namespace[%s] does not contain 'servo_config", nhp.getNamespace().c_str());
+
+	return 0;
 
 
 	/*
